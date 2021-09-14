@@ -1,2 +1,2 @@
-# Reset.css
-reset.css repository
+# Common.css
+common.css repository
