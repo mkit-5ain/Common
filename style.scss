@@ -26,7 +26,17 @@ $align-right: right;
     -o-box-sizing:border-box;
 }
 
-@mixin inlin-block-middle($css-selector) {
-    display: inline-block;
-    vertical-align: $align-middle;
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin spritebox($left, $top, $height, $width) {
+  background-repeat: no-repeat;
+  background-position: $left $top;
+  height: $height;
+  width: $width;
 }
