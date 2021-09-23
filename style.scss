@@ -34,9 +34,9 @@ $align-right: right;
     }
 }
 
-@mixin spritebox($left, $top, $height, $width) {
+@mixin spritebox($left, $top, $width, $height) {
   background-repeat: no-repeat;
   background-position: $left $top;
-  height: $height;
   width: $width;
+  height: $height;
 }
