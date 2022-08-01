@@ -1,5 +1,4 @@
-// MIXIN
-
+// 박스사이징
 @mixin box-sizing() {
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -7,7 +6,7 @@
     -ms-box-sizing:border-box;
     -o-box-sizing:border-box;
 }
-
+// 클리어
 @mixin clearfix {
     &::after {
         content: '';
@@ -15,15 +14,29 @@
         clear: both;
     }
 }
-
-@mixin spritebox($left, $top, $width, $height) {
-  background-repeat: no-repeat;
-  background-position: $left $top;
+// 이미지 스프라이트
+@mixin spritebox($width, $height, $left, $top, $size) {
   width: $width;
   height: $height;
+  background-repeat: no-repeat;
+  background-position: $left $top;
+  background-size: $size;
 }
- 
+// 컨텐츠 너비, 좌우 여백
 @mixin width-margin ($margintb, $marginlr) {
-    width: calc(100% - #{$marginlr*2});
+    width: calc(100% - #{$marginlr * 2});
     margin: $margintb $marginlr;
+}
+// 1차원 레이아웃 모델
+@mixin flex ($derection) {
+    display: flex;
+    justify-content: $derection;
+}
+// 타이틀
+@mixin h1 {
+    font: {
+        font-size: 24px;
+        weight: bold;
+    }
+    color: #000;
 }

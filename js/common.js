@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 스와이프
-    mainSwiper('.swiper-container'); 
-    // 탭
-    tabAction('.tab-menu, .tab-item');
+    /**
+     * 
+     */
 });
 
 function mainSwiper(el) {
