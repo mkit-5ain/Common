@@ -52,7 +52,6 @@ $flex-map: (
     justify-content: _get-flex-value($jc);
 }
 
-
 div {
     @include flexbox(start, end )
 }
