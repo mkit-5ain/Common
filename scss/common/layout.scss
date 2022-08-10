@@ -16,5 +16,12 @@ body { background: #191919; font-family: studiofeixen-variable; }
 }
 .clip {
     path { transform: scale(4); }
-    .clip-image { clip-path: url(#hart); }    
+    .clip-image { 
+        width: 698px;
+        height: 832px;
+        background: url('../image/common/header@1x.jpg') 0 0 no-repeat;
+        background-attachment: fixed;
+        clip-path: url(#hart); 
+
+    }    
 }
