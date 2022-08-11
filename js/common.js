@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /**
-     * 
-     */
+     scrollMovement();
 });
 
 function mainSwiper(el) {
@@ -50,3 +48,9 @@ function tabAction(tabItem, tabContent) {
     }
 }
 
+function scrollMovement() {
+    const scroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true
+	});
+}
